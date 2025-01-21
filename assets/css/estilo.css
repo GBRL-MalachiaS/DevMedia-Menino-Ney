@@ -12,5 +12,82 @@ padrão de cores:
 #0200006e
 #ffdf00
 #009c3b
-
 */
+
+/* Configuração reset do corpo */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Configurações do banner */
+.container-banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-banner video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container referente ao  */
+.container-info {
+    text-align: center;
+    padding: 40px;
+}
+.container-info h1{
+    color: #fff;
+    text-shadow: 3px 3px 1px black;
+}
+.info-img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/neymar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.info-img::before {
+    content: "";
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.pg-links{
+    background-color: rgb(0,0,0,0.6);
+    border-radius: 40px;
+    margin: 30px;
+    width: 600px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 18px;
+
+}
