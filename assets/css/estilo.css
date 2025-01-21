@@ -31,7 +31,8 @@ padrão de cores:
     align-items: center;
     flex-direction: column;
 }
-.container-banner video{
+
+.container-banner video {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -44,10 +45,12 @@ padrão de cores:
     text-align: center;
     padding: 40px;
 }
-.container-info h1{
+
+.container-info h1 {
     color: #fff;
     text-shadow: 3px 3px 1px black;
 }
+
 .info-img {
     width: 200px;
     height: 200px;
@@ -73,8 +76,8 @@ padrão de cores:
     z-index: -1;
 }
 
-.pg-links{
-    background-color: rgb(0,0,0,0.6);
+.pg-links {
+    background-color: rgb(0, 0, 0, 0.6);
     border-radius: 40px;
     margin: 30px;
     width: 600px;
@@ -82,12 +85,45 @@ padrão de cores:
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.links{
+.links {
     text-decoration: none;
     color: #fff;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 18px;
+}
 
+.pg-links::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: #009c3b;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 35px;
+    top: 8%;
+}
+
+.youtube::before {
+    background-image: url('../img/youtube.png');
+}
+
+.instagram::before {
+    background-image: url('../img/instagram.png');
+}
+
+.twitter::before {
+    background-image: url('../img/twitch.png');
+}
+
+.facebook::before {
+    background-image: url('../img/facebook.png');
+}
+
+.twitch::before {
+    background-image: url('../img/twitch.png');
 }
