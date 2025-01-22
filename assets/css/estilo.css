@@ -46,9 +46,20 @@ padrão de cores:
     padding: 40px;
 }
 
-.container-info h1 {
+.info-titulo {
     color: #fff;
     text-shadow: 3px 3px 1px black;
+}
+
+.info-titulo::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/verificado.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .info-img {
@@ -93,13 +104,13 @@ padrão de cores:
     color: #fff;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 18px;
+    text-shadow: 1px 1px 1px black;
 }
 
 .pg-links::before {
     content: "";
     width: 35px;
     height: 35px;
-    background-color: #009c3b;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +128,7 @@ padrão de cores:
 }
 
 .twitter::before {
-    background-image: url('../img/twitch.png');
+    background-image: url('../img/twitter.png');
 }
 
 .facebook::before {
@@ -126,4 +137,21 @@ padrão de cores:
 
 .twitch::before {
     background-image: url('../img/twitch.png');
+}
+
+.pg-links:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+.container-stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/imagem-de-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
