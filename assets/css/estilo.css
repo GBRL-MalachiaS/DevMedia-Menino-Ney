@@ -86,7 +86,6 @@ padrão de cores:
     border-radius: 100%;
     z-index: -1;
 }
-
 .pg-links {
     background-color: rgb(0, 0, 0, 0.6);
     border-radius: 40px;
@@ -154,4 +153,11 @@ padrão de cores:
     background-image: url('../img/imagem-de-fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+tr:nth-child(even){
+    background-color: blue;
+}
+tr:nth-child(odd){
+    background-color: black;
 }
